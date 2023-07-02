@@ -1,0 +1,43 @@
+@import url("./navbar.css");
+@import url("./ajuda.css");
+@import url("./footer.css");
+@import url("./contato.css");
+
+:root {
+  --fonte-principal: "Lalezar";
+  --azul-escuro: #36517c;
+  --azul-claro: #B6E0F6;
+  --azul-bg-sobre: #888cac;
+  --azul-borda-sobre: #a0a4bc;
+  --laranja: #DEB13E;
+  --sombra: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --branco: #FFFFFF;
+  --vermelho-escuro: #BB3535;
+  --cinza: #D9D9D9;
+}
+
+body {
+  font-family: var(--fonte-principal) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.sobre__banner {
+  background-image: url('../assets/fundo-amarelo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .img__sobre {
+    width: 220px;
+  }
+  .container__sobre {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .sobre__texto {
+    padding-top: 2rem;
+  }
+}
